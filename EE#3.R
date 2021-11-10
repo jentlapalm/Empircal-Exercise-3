@@ -65,15 +65,16 @@ rain[,SPI:=(qpear3-mean(qpear3))/sd(qpear3),by=.(district,trunc(time))]
 rain <- rain[!is.na(SPI),]
 
 "1(A).
-Create a scatter plot, showing relationship between the
-average SPI in a district across each year from the prior election-or from the beginning
-of the data for the first election-leading up to the current election, and the number of
-political parties that are founded in a district. Consider the party to be "founded" if it
-has not competed in an election in this district prior to this election."
+Create a scatter plot, showing relationship between 
+average SPI in a district across each year from the prior election or first election up to the current election, and 
+the number of political parties that are founded in a district. 
+Consider the party to be "founded" if it has not competed in an election in this district prior to this election."
 
-# group by district
+# nail down election year intervals in election dt
 
 # calculate number of parties founded by election-interval
+
+# join with average SPI by district for each election-year interval
 
 # create a scatter plot of SPI by number of parties for a district
 
